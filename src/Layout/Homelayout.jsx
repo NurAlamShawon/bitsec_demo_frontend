@@ -3,7 +3,7 @@ import Home from "../Components/Home";
 
 const Homelayout = () => {
   return (
-    <div>
+    <div className="p-8">
       <Home />
     </div>
   );

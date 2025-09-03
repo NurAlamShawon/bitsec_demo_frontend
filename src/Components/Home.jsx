@@ -64,10 +64,10 @@ const Home = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative karla">
       {/* Full page loading overlay */}
       {loading && (
-        <div className="fixed inset-0 bg-white flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-gray-900 flex items-center justify-center z-50">
           <motion.div
             className="w-14 h-14 border-4 border-blue-600 border-t-transparent rounded-full"
             animate={{ rotate: 360 }}
@@ -78,9 +78,9 @@ const Home = () => {
 
       {/* Main content */}
       <div className="xl:max-w-7xl p-6 rounded-xl shadow-xl mx-auto bg-white space-y-6">
-        <h1 className="text-2xl font-bold">User Management</h1>
+        <h1 className="text-2xl font-bold text-blue-900">User Management</h1>
         <div className="xl:flex flex-row items-center">
-          <label className="input rounded-lg xl:w-276 w-full">
+          <label className="input rounded-lg xl:w-280 w-full">
             <input
               type="search"
               required
@@ -117,7 +117,7 @@ const Home = () => {
                     onClick={() => handleRowClick(user.id)}
                      data-aos="fade-left" data-aos-delay="100" data-aos-anchor=".example-selector"
                   >
-                    <td className="px-4 py-4">{user.name}</td>
+                    <td className="px-4 py-4">{user.name}<br></br><span className="text-gray-400">@{user.username}</span></td>
                     <td className="px-4 py-4">{user.email}</td>
                     <td className="px-4 py-4">{user.phone}</td>
                     <td className="px-4 py-4">{user.company.name}</td>

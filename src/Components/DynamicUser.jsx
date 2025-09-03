@@ -14,7 +14,7 @@ const DynamicUser = () => {
           <button className="text-sm btn btn-soft">← Back to Users</button>
         </Link>
 
-        <h2 className="text-2xl font-semibold text-gray-800">User Details</h2>
+        <h2 className="text-2xl font-semibold text-blue-900">User Details</h2>
       </div>
 
       {/* Main Content */}
